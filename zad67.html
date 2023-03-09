@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Wyświetlanie nazwiska lub imienia</title>
+	<style>
+		body {
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body>
+	<p id="name"></p>
+	<script>
+		const name = "Zukowski";
+		const surname = "Piotr";
+		const liczba_liter_nazwiska = name.length;
+		const ile_razy_wyswietlic = (liczba_liter_nazwiska % 4) + 10;
+		const wielkosc_liter = (liczba_liter_nazwiska % 3) + 40;
+
+		for (let i = 1; i <= ile_razy_wyswietlic; i++) {
+			if (i % 2 === 0) {
+				document.getElementById("name").innerHTML += `<span style="font-size: ${wielkosc_liter}px">${surname}</span><br>`;
+			} else {
+				document.getElementById("name").innerHTML += `<span style="font-size: ${wielkosc_liter}px">${name}</span><br>`;
+			}
+		}
+	</script>
+</body>
+</html>
