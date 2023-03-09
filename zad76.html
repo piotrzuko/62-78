@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+ <meta charset="utf-8">
+ <title> Przykład użycia pętli </title>
+ <script language="JavaScript">
+ for (let i = 30; i <= 45; i++) {
+  const pierw2 = Math.sqrt(i).toFixed(2);
+  const pierw4 = Math.sqrt(pierw2).toFixed(2);
+  console.log(`I=${i} pierw_2(${i})=${pierw2} pierw_4(${i})=${pierw4}`);
+  if (i % 3 === 0) {
+    console.log("..........................................");
+    confirm("Aby kontynuować, naciśnij dowolny klawisz");
+  }
+}
+ </script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,31 @@
+const readline = require('readline-sync');
+
+const name = readline.question('Podaj imię: ');
+const surname = readline.question('Podaj nazwisko: ');
+
+const a_kow = (surname.length % 4) + 5;
+const b_kow = (name.length % 6) + 20;
+
+// First row
+let row = '';
+for (let i = 0; i < b_kow; i++) {
+  row += '*';
+}
+console.log(row);
+
+// Middle rows
+for (let i = 0; i < a_kow - 2; i++) {
+  row = '*';
+  for (let j = 0; j < b_kow - 2; j++) {
+    row += ' ';
+  }
+  row += '*';
+  console.log(row);
+}
+
+// Last row
+row = '';
+for (let i = 0; i < b_kow; i++) {
+  row += '*';
+}
+console.log(row);

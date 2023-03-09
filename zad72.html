@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+ <meta charset="utf-8">
+ <title> Przykład użycia pętli </title>
+ <script language="JavaScript">
+ 
+const a_zuk = (lastName.length % 4) + 30;
+const b_zuk = (firstName.length % 6) + 45;
+
+for (let i = 0; i < a_zuk; i++) {
+  if (i === 0 || i === a_zuk - 1) {
+    console.log('*'.repeat(b_zuk));
+  } else {
+    let row = '*';
+    for (let j = 1; j < b_zuk - 1; j++) {
+      row += ' ';
+    }
+    row += '*';
+    console.log(row);
+  }
+}
+</script>
+</head>
+<body>
+</body>
+</html>

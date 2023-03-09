@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript - rok</title>
+</head>
+<body>
+	<div id="wynik" style="font-size:20px;"></div>
+	<form onsubmit="sprawdzRok();return false;">
+		<label>Podaj rok, od którego działa JavaScript:</label>
+		<input type="number" id="rok" required>
+		<input type="submit" value="Sprawdź">
+	</form>
+	<script>
+		function sprawdzRok() {
+			var rok = document.getElementById("rok").value;
+			if (rok == 1995) {
+			   document.write("<font color=blue size=4>Brawo wpisałes dobry rok </font>"+"<br>");
+			   } else {
+			   document.write("<font color=red size=7>Musisz jeszcze troche pocwiczyć </font>"+"<br>");
+			   	}
+				document.getElementById("wynik").innerHTML += "<br>Wczytany rok = " + rok;
+				}
+	</script>
+</body>
+</html>

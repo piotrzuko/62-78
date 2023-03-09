@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<title>Wypisywanie liczb nieparzystych</title>
+</head>
+<body>
+	<script language="JavaScript">
+		var liczba1 = parseInt(prompt("Podaj pierwszą liczbę:"));
+		var liczba2 = parseInt(prompt("Podaj drugą liczbę:"));
+		var minLiczba = Math.min(liczba1, liczba2);
+		var maxLiczba = Math.max(liczba1, liczba2);
+		var output = "";
+		if (liczba1 === liczba2) {
+			alert("Podane liczby są równe.");
+		} else {
+			for (var i = minLiczba + 1; i < maxLiczba; i++) {
+				if (i % 2 !== 0) {
+					if (liczba1 < liczba2) {
+						output += "<span style='color: green'>" + i + "</span><br>";
+					} else {
+						output += "<span style='color: blue; font-size: 50%'>" + i + "</span><br>";
+					}
+				}
+			}
+			if (output === "") {
+				alert("Nie ma liczb nieparzystych między podanymi liczbami.");
+			} else {
+				document.write(output);
+			}
+		}
+	</script>
+</body>
+</html>
+
+
+
+
