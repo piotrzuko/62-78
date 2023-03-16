@@ -1,0 +1,38 @@
+<h1>zadanie71</h1>
+<textarea cols=111 rows=25>
+<html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title> Zadanie 72 </title>
+<script language="JavaScript">
+var a=prompt("Podaj wysokosc a=", "");
+var a_zuk=a;
+var b=prompt("Podaj szerokosc b=", "");
+var b_zuk=b;
+for (var i=1; i<=b_zuk; i++)
+{
+document.write("*");
+}
+document.write("<br>");
+var wiersz_zuk="*";
+for ( var i=1; i<=(b-2); i++)
+{
+wiersz_zuk=wiersz_zuk+"&nbsp&nbsp";
+}
+wiersz_zuk=wiersz_zuk+"*";
+for (var i=1; i<=a_zuk; i++)
+{
+document.write(wiersz_zuk);
+document.write("<br>");
+} 
+for (var i=1; i<=b_zuk; i++)
+{
+document.write("*");
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+</textarea>

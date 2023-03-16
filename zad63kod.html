@@ -1,0 +1,32 @@
+<h1>zadanie71</h1>
+<textarea cols=111 rows=25>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kolory tekstu</title>
+</head>
+<body>
+	<div id="menu" style="color:green;font-size:20px;">MENU:</div>
+	<form onsubmit="wybierzKolor();return false;">
+		<label>Wybierz kolor:</label>
+		<select id="kolor">
+			<option value="1">Czerwony</option>
+			<option value="2">Niebieski</option>
+		</select>
+		<input type="submit" value="Wybierz">
+	</form>
+	<script>
+		function wybierzKolor() {
+			var kolor = document.getElementById("kolor").value;
+			if (kolor == "1") {
+				document.getElementById("menu").innerHTML = "<span style='color:red;font-size:7;'>Wczytałeś kolor czerwony</span>";
+			} else if (kolor == "2") {
+				document.getElementById("menu").innerHTML = "<span style='color:blue;font-size:1;'>Wczytałeś kolor niebieski</span>";
+			} else {
+				alert("Nieprawidłowy wybór koloru!");
+			}
+		}
+	</script>
+</body>
+</html>
+</textarea>

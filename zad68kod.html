@@ -1,0 +1,49 @@
+<h1>zadanie71</h1>
+<textarea cols=111 rows=25>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Wyświetlanie imienia lub nazwiska</title>
+	<style>
+		.blue {
+			color: blue;
+		}
+
+		.green {
+			color: green;
+		}
+	</style>
+</head>
+<body>
+	<label>Wpisz liczbę: <input type="text" id="liczba"></label>
+	<button onclick="wyswietl()">Wyświetl</button>
+	<p id="wynik"></p>
+
+	<script>
+		function wyswietl() {
+			let liczba = parseInt(document.getElementById("liczba").value);
+			let imie = "Piotr";
+			let nazwisko = "Zukowski";
+
+			let ile_razy_wyswietlic = (nazwisko.length % 4) + 10;
+			let wielkosc_liter = (nazwisko.length % 3) + 40;
+
+			let wynik = document.getElementById("wynik");
+
+			if (liczba % 2 == 0) {
+				wynik.style.color = "blue";
+				for (let i = 0; i < ile_razy_wyswietlic; i++) {
+					wynik.innerHTML += '<span style="font-size: ' + wielkosc_liter + 'px;">' + nazwisko + '</span><br>';
+				}
+			} else {
+				wynik.style.color = "green";
+				for (let i = 0; i < ile_razy_wyswietlic; i++) {
+					wynik.innerHTML += '<span style="font-size: ' + wielkosc_liter + 'px;">' + imie + '</span><br>';
+				}
+			}
+		}
+	</script>
+</body>
+</html>
+</textarea>

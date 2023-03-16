@@ -1,0 +1,31 @@
+<h1>zadanie71</h1>
+<textarea cols=111 rows=25>
+<html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Zadanie 74</title>
+</head>
+<body>
+<script language="JavaScript">
+var x=prompt("Podaj pierwszą liczbę z przedziału <20,60>", "");
+var l1_t_zuk=parseFloat(x);
+var y=prompt("Podaj drugą liczbę z przedziału <20,60>", "");
+var l2_t_zuk=parseFloat(y);
+var z=prompt("Podaj wartość początkową wielkości tekstu"," ");
+var pocz_zuk=parseFloat(z);
+var a=prompt("Podaj dowolny tekst", "");
+var tekst_zuk=parseFloat(a);
+if(l1_t_zuk<20 && l1_t_zuk>60)
+{
+document.write("liczba l1 nie należy do przedziału <20,60>"+"<br>");
+}
+if(l2_t_zuk<20 && l2_t_zuk>60)
+{
+document.write("liczba l2 nie należy do przedziału <20,60>"+"<br>");
+}
+document.write("<p style=\"font-size:"+pocz_zuk+"px; color: black;\"><br>"+tekst_zuk+"<br></p>");
+</script>
+</body>
+</html>
+</textarea>
